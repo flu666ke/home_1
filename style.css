@@ -46,6 +46,11 @@ h1 {
     border-right: 2px solid #f4bd50;
 }
 
+.title-menu a:hover {
+    color: #f4bd50;
+    transition: 0.5s;
+}
+
 #touch {
     display: flex;
     justify-content: space-between;
@@ -66,6 +71,11 @@ h1 {
     font-weight: bold;
     font-size: 12px;
     text-decoration: none;
+}
+
+.link a:hover {
+    color: #f4bd50;
+    transition: 0.5s;
 }
 
 /*block2*/
@@ -125,6 +135,9 @@ section {
     position: relative;
 }
 
+#eye {
+    box-shadow: 4px 4px 10px 0px;
+} 
 
 .border {
     height: 124px;
@@ -134,10 +147,11 @@ section {
 h2 {
     z-index: 1000;
     color: white;
-    font-size: 50px;
+    font-size: 84px;
     font-weight: 200;
     position: absolute;
     margin: 0 auto;
+    width: 500px;
 }
 
 #gold {
@@ -352,9 +366,27 @@ label {
     resize: none;
 }
 
+.footer-block, label:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: #f4bd50;
+}
+
+#massege:hover {
+    border-bottom: 1px solid #f4bd50;
+    transition: 0.5s;
+}
+
+input:hover {
+    border-bottom: 1px solid #f4bd50;
+    transition: 0.5s;
+}
+
 .footer-block {
     padding-top: 60px;
 }
+
+
 
 .footer-block:nth-of-type(5) {
     flex-grow: 1;
@@ -369,6 +401,7 @@ button {
     text-transform: uppercase;
     color: #5c5c5c;
     background: #f4bd50;
+    cursor: pointer;
 }
 
 .footer-wrap button img {
@@ -407,6 +440,11 @@ button {
     text-decoration: none;
 }
 
+.footer #footer-other span a:hover {
+    color: #f4bd50;
+    transition: 0.5s;
+}
+
 /* media */
 
 
@@ -414,6 +452,10 @@ button {
     .container {
         margin: 0 auto;
         max-width: 840px;
+    }
+
+    h2 {
+        font-size: 50px;
     }
 
     #eye {
@@ -481,6 +523,10 @@ button {
 
     h1 {
         font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
     }
 
     .wrap {
