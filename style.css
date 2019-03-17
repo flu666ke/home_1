@@ -49,7 +49,7 @@ h1 {
 #touch {
     display: flex;
     justify-content: space-between;
-    padding: 0 0 340px;
+    padding: 0 0 140px;
 }
 
 #F {
@@ -79,11 +79,10 @@ h3 {
     text-align: center;
     color: white;
     padding: 0 0 100px;
-    margin: inherit;
+    margin: 0 auto;
     font-weight: 200;
-    max-width: 600px;
+    max-width: 520px;
     line-height: 1.5;
-
 }
 
 h5 {
@@ -205,6 +204,7 @@ h2 {
     max-width: 750px;
     background: #111111;
     margin: 0 auto;
+    box-shadow: 4px 4px 10px 0px;
 }
 
 .slider2 img {
@@ -377,6 +377,7 @@ button {
 
 .footer-wrap {
     padding-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -384,6 +385,7 @@ button {
     justify-content: space-between;
     background: #313131;;
     padding: 120px 0;
+    box-shadow: none;
 }
 
 #footer-other {
@@ -403,4 +405,234 @@ button {
     line-height: 1.7;
     font-size: 12px;
     text-decoration: none;
+}
+
+/* media */
+
+
+@media(max-width: 1500px) {
+    .container {
+        margin: 0 auto;
+        max-width: 840px;
+    }
+
+    #eye {
+        content: url(images/saw.jpg);
+    }
+
+    #after-img {
+        padding: 245px 0 0;
+        margin-left: 40px;
+    }
+
+    .border {
+        height: 64px;
+    }
+
+    .slider {
+        max-width: 340px;
+    }
+
+    #gold {
+        padding: 10px 0;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    .team-wrap {
+        width: 33.2%;
+        padding-bottom: 0;
+    }
+
+    #team-wrap #team {
+        width: 66.5%;
+    }
+
+    .team-wrap:nth-child(-n+6) {
+        border-bottom: 1px solid #1a1a1a;
+        border-right: 1px solid #1a1a1a;
+    }
+
+    .team-wrap:nth-child(6) {
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .team-wrap:nth-child(7) {
+        border-left: none;
+    }
+    
+    .team-wrap:nth-child(2) {
+        border-right: none;
+    }
+
+    .team-wrap:nth-child(5) {
+        border-right: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .container {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 120px;
+    }
+     
+    #eye {
+        content: url(images/tokyo.jpg);
+    }
+
+    #after-img {
+        padding-top: 0;
+        margin-left: 30px;
+    }
+
+    .slider {
+        max-width: 340px;
+    }
+
+    #level {
+        max-width: 600px;
+    }
+
+    h5 {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    p {
+        margin: 0 0 10px;
+    }
+
+    #touch {
+        padding: 0 0 140px;
+    }
+
+    h3 {
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+
+    #companies {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    #companies img {
+        display: block;
+        margin: auto 10px;
+    }
+
+
+    #massege {
+        width: 380px;
+    }
+
+
+
+    .team-wrap {
+        width: 49.9%;
+        padding-bottom: 0;
+    }
+
+    .team-wrap #team-face {
+        padding: 50px 64px 0;
+    }
+
+    #team-wrap #team {
+        width: 49.7%;
+    }
+
+    .team-wrap:nth-child(2n+1) {
+        border-bottom: 1px solid #1a1a1a;
+        border-right: 1px solid #1a1a1a;
+    }
+
+    .team-wrap:nth-child(7) {
+        border-bottom: none;
+    }
+
+    .team-wrap:nth-child(2n) {
+        border: none;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .team-wrap:nth-child(8) {
+        border-bottom: none;
+    }
+
+   
+    
+}
+
+@media(max-width: 800px) {
+
+    h1 { 
+        font-size: 40px;
+    }
+
+    .title {
+        padding: 100px 0 0;
+    }
+
+    .title-menu {
+        padding: 0 0 240px;
+    }
+
+    #touch {
+        padding: 0 0 140px;
+    }
+}
+
+@media(max-width: 640px) {
+    #after-img {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .container {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    h1 { 
+        font-size: 28px;
+        padding: 50px 100px;
+    }
+
+    .title {
+        padding: 50px 0 0;
+    }
+
+    #touch {
+        padding: 0 0 50px;
+    }
+
+    h3 {
+        font-size: 27px;
+        max-width: 400px;
+    }
+
+    .box-img {
+        max-width: 500px;
+    }
+
+    #text-in-block {
+        font-size: 12px;
+    }
 }
