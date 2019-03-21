@@ -137,12 +137,36 @@ section {
 
 #eye {
     box-shadow: 4px 4px 10px 0px;
+    max-height: 600px;
 } 
+
+
+
+
+
+
+@keyframes hoverBright {
+
+}
+
+#eye:hover {
+    animation: hoverBright 1s;
+
+}
+
+
+
+
+
+
 
 .border {
     height: 124px;
     border-left: 2px solid #f4bd50;
+    box-shadow: 4px 4px 10px 0px;
+    width: 1px;
 }
+
 
 h2 {
     z-index: 1000;
@@ -451,24 +475,32 @@ button {
 @media(max-width: 1500px) {
     .container {
         margin: 0 auto;
-        max-width: 840px;
+        max-width: 940px;
     }
 
     h2 {
         font-size: 50px;
     }
 
+    #touch {
+        padding-bottom: 100px;
+    }
+
+    section {
+        padding: 100px 0;
+    }
+
     #eye {
-        content: url(images/saw.jpg);
+        content: url(images/eye1.jpg);
     }
 
     #after-img {
-        padding: 245px 0 0;
+        padding: 309px 0 0;
         margin-left: 40px;
     }
 
     .border {
-        height: 64px;
+        height: 100px;
     }
 
     .slider {
@@ -483,13 +515,19 @@ button {
         margin-bottom: 15px;
     }
 
+    .team {
+        padding-bottom: 100px;
+    }
+
     .team-wrap {
         width: 33.2%;
         padding-bottom: 0;
+        text-align: center;
     }
 
     #team-wrap #team {
         width: 66.5%;
+        text-align: left;
     }
 
     .team-wrap:nth-child(-n+6) {
@@ -513,16 +551,21 @@ button {
     .team-wrap:nth-child(5) {
         border-right: none;
     }
+
+    .footer {
+        padding: 100px 0;
+    }
 }
 
 @media(max-width: 1200px) {
     .container {
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 700px;
     }
 
     h1 {
         font-size: 40px;
+        padding: 50px 100px;
     }
 
     h2 {
@@ -533,15 +576,23 @@ button {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-bottom: 120px;
+        padding: 0 50px 60px;
+    }
+
+    section {
+        padding: 50px 0;
     }
      
     #eye {
-        content: url(images/tokyo.jpg);
+        content: url(images/eye2.jpg);
+    }
+
+    .border {
+        height: 80px;
     }
 
     #after-img {
-        padding-top: 0;
+        padding-top: 180px;
         margin-left: 30px;
     }
 
@@ -563,11 +614,15 @@ button {
     }
 
     #touch {
-        padding: 0 0 140px;
+        padding-bottom: 20px;
     }
 
     h3 {
         font-size: 30px;
+        padding-bottom: 50px;
+    }
+
+    .companies {
         padding-bottom: 50px;
     }
 
@@ -584,7 +639,7 @@ button {
 
 
     #massege {
-        width: 380px;
+        width: 99%;
     }
 
 
@@ -600,6 +655,10 @@ button {
 
     #team-wrap #team {
         width: 49.7%;
+    }
+
+    .team {
+        padding-bottom: 50px;
     }
 
     .team-wrap:nth-child(2n+1) {
@@ -620,7 +679,9 @@ button {
         border-bottom: none;
     }
 
-   
+    .footer {
+        padding: 50px 0;
+    }
     
 }
 
@@ -628,6 +689,10 @@ button {
 
     h1 { 
         font-size: 40px;
+    }
+
+    .wrap {
+        padding-bottom: 20px;
     }
 
     .title {
@@ -638,14 +703,91 @@ button {
         padding: 0 0 240px;
     }
 
-    #touch {
-        padding: 0 0 140px;
+    .box-img {
+        padding: 0 100px;
+    }
+
+    .border {
+        height: 60px;
+    }
+
+    #eye {
+        content: url(images/eye3.jpg);
+    }
+
+    #after-img {
+        padding-top: 100px;
+        margin-left: 20px;
+        padding-right: 26px;
+    }
+
+    #gold {
+        padding: 0;
+    }
+
+    .companies {
+        padding: 0 30px 20px;
+    }
+
+    .slider {
+        max-width: 200px;
+    }
+
+    #slide {
+        padding-left: 10px;
+    }
+
+    .team {
+        padding-bottom: 20px;
+    }
+
+    #team-wrap {
+        margin: 0 40px;
+    }
+
+    form {
+        display: flex;
+        
+        flex-direction: column;
+        
+        padding: 0 50px 50px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-wrap {
+        max-width: 570px;
+    }
+
+    
+
+}
+
+@media(max-width: 775px) {
+    .border {
+        height: 60px;
+    }
+
+    .box-img #after-img p {
+        margin: 0;
+    }
+}
+
+@media(max-width: 721px) {
+    .border {
+        height: 40px;
     }
 }
 
 @media(max-width: 640px) {
     #after-img {
-        margin-left: 0;
+        margin-left: 5px;
+    }
+
+    .box-img {
+        padding: 0 50px;
     }
 }
 
@@ -665,13 +807,13 @@ button {
         padding: 50px 0 0;
     }
 
-    #touch {
-        padding: 0 0 50px;
-    }
-
     h3 {
         font-size: 27px;
         max-width: 400px;
+    }
+
+    .slider {
+        max-width: 200px;
     }
 
     .box-img {
@@ -680,5 +822,9 @@ button {
 
     #text-in-block {
         font-size: 12px;
+    }
+
+    #team-wrap {
+        margin: 0;
     }
 }
