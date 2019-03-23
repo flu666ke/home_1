@@ -135,12 +135,21 @@ section {
     position: relative;
 }
 
-#eye {
+/*#eye {
+    position: relative;
+}*/
+
+#eye img {
     box-shadow: 4px 4px 10px 0px;
     max-height: 600px;
+    display: none;
+    /*position: absolute;
+    left: -400px;*/
 } 
 
-
+#eye img:first-child {
+    display: block;
+}
 
 
 
@@ -491,11 +500,11 @@ button {
     }
 
     #eye {
-        content: url(images/eye1.jpg);
+        content: url(images/eye1.jpg) url(images/slide41500.jpg);
     }
 
     #after-img {
-        padding: 309px 0 0;
+        padding: 350px 0 0;
         margin-left: 40px;
     }
 
