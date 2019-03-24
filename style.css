@@ -143,6 +143,7 @@ section {
     box-shadow: 4px 4px 10px 0px;
     max-height: 600px;
     display: none;
+    width: 100%;
     /*position: absolute;
     left: -400px;*/
 } 
@@ -155,16 +156,29 @@ section {
 
 
 @keyframes hoverBright {
+    from {
+        color: #000;
+        filter: brightness(1);
+    }
 
+    70% {
+        color: #f4bd50;
+        filter: brightness(2);
+    }
+
+    to {
+        color: #000;
+        filter: brightness(1);
+    }
 }
+
+
+
+
 
 #eye:hover {
-    animation: hoverBright 1s;
-
+    animation: hoverBright 2s cubic-bezier(0.55, 0.06, 0.44, 0.91);
 }
-
-
-
 
 
 
@@ -210,7 +224,7 @@ h2 {
 
 #slide {
     max-width: 11%;
-    border-bottom: 2px solid #f4bd50;
+    border-bottom: 2px solid #bcbcbc;
     padding: 20px 15px;
 }
 
@@ -305,6 +319,8 @@ h2 {
     padding-bottom: 130px;
 }
 
+
+
 #team-wrap {
     display: flex;
     justify-content: space-between;
@@ -343,6 +359,26 @@ h2 {
 
 #team-face {
     padding: 50px 80px 0;
+}
+
+@keyframes changeTeam {
+    from {
+        padding: 50px 80px 0;
+    }
+
+    50% {
+        padding: 50px 80px 0;
+        content: url(images/team2.jpg);
+        
+    }
+        
+    to {
+        padding: 50px 80px 0;
+    }
+}
+
+ #team-face:hover {
+    animation: changeTeam 3s;
 }
 
 #first-image {
@@ -504,7 +540,7 @@ button {
     }
 
     #after-img {
-        padding: 350px 0 0;
+        padding: 321px 0 0;
         margin-left: 40px;
     }
 
@@ -593,7 +629,7 @@ button {
     }
      
     #eye {
-        content: url(images/eye2.jpg);
+        content: url(images/eye2.jpg) url(image/slide41200.jpg);
     }
 
     .border {
@@ -601,7 +637,7 @@ button {
     }
 
     #after-img {
-        padding-top: 180px;
+        padding-top: 200px;
         margin-left: 30px;
     }
 
