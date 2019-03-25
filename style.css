@@ -753,11 +753,11 @@ button {
     }
 
     .border {
-        height: 60px;
+        display: none;
     }
 
     #eye {
-        content: url(images/eye3.jpg);
+        content: url(images/eye3.jpg) url(images/slide4800.jpg);
     }
 
     #after-img {
@@ -810,21 +810,12 @@ button {
 
 }
 
-@media(max-width: 775px) {
-    .border {
-        height: 60px;
-    }
-
-    .box-img #after-img p {
-        margin: 0;
+@media(max-width: 700px) {
+    .box-img {
+        padding: 0 50px;
     }
 }
 
-@media(max-width: 721px) {
-    .border {
-        height: 40px;
-    }
-}
 
 @media(max-width: 640px) {
     #after-img {
